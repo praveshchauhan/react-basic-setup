@@ -3,20 +3,19 @@ import React from 'react';
 class App extends React.Component {
   constructor() {
     super();
-    this.state = { text: 'Increasing value in every 2 secs', counter : 0}
+    this.state = { text: 'Hello'}
   }
   componentDidMount() {
-    setInterval(() => {
-      //this.incCounter()
-      this.setState({counter: this.state.counter + 1});
+    setTimeout(() => {
+      this.setState({text: 'Hello World!'});
     }, 1000);
   }
-  incCounter(){
-    this.setState({counter: this.state.counter + 1});
+  updateText(){
+    this.setState({text: 'Hello World!'});
   }
   render() {
     return (
-      <div>{this.state.text} {this.state.counter}</div>
+      <div>{this.state.text}</div>
     )
   }
 }
