@@ -8,7 +8,7 @@ class App extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({text: 'Hello World!'});
-    }, 1000);
+    }, 2000);
   }
   updateText(){
     this.setState({text: 'Hello World!'});
